@@ -1,0 +1,40 @@
+/* Flex & Grid */
+.flex { display: flex; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.grid { display: grid; }
+
+/* Text */
+.text-center { text-align: center; }
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+
+/* Backgrounds */
+.bg-primary { background: var(--color-primary); color: #fff; }
+.bg-secondary { background: var(--color-secondary); }
+
+/* Spacing */
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: white;
+}

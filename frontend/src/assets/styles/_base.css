@@ -1,0 +1,14 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-text-dark);
+  line-height: 1.6;
+}

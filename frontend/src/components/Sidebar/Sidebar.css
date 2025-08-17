@@ -1,0 +1,89 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 20px 15px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 5rem;
+  height: 28px;
+  font-weight: 600;
+}
+
+.sidebar-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b0888;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 6px;
+  font-size: 13px;
+  width: 100%;
+}
+
+.search-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+
+.section-title {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #aaa;
+  margin: 30px 0 8px 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 8px 0;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.menu-item img {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-item:hover {
+  background: #f3f0ff;
+  color: #5b0888;
+}
+
+.menu-item.active {
+  color: #5b0888;
+  border-left: 4px solid #5b0888;
+  padding-left: 8px;
+}

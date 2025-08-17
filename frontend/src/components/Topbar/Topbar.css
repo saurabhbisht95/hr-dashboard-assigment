@@ -1,0 +1,24 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.filters {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.search-input, .filter-select {
+  padding: var(--spacing-sm);
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}

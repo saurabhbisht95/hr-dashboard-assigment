@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --color-primary: #4D007D;
+  --color-secondary: #50E3C2;
+  --color-background: #4D007D;
+  --color-text-dark: #333;
+  --color-text-light: #777;
+
+  /* Fonts */
+  --font-family: 'Nunito', sans-serif;
+
+  /* Sizes */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --radius: 8px;
+}

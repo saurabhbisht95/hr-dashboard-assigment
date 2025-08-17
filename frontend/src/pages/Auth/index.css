@@ -1,0 +1,266 @@
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 2rem 0;
+}
+
+.register-logo {
+  width: 120px;
+  margin-bottom: 2rem;
+}
+
+.register-container {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  height: 600px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+
+/* Left side */
+.register-left {
+  flex: 1;
+  background-color: #4d007d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.register-dash {
+  width: 450px;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  margin-bottom: 2rem;
+}
+
+.register-left-text h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.register-left-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.register-scroll {
+  margin-top: 2rem;
+  width: 60px;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem 4rem;
+}
+
+.register-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 320px; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 0.6rem 2.5rem 0.6rem 0.75rem; 
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #4d007d;
+  box-shadow: 0 0 0 2px rgba(77,0,125,0.15);
+}
+
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
+
+.rela {
+  position: relative;
+  width: 100%; 
+  display: flex;
+  align-items: center;
+}
+
+.rela input {
+  padding-right: 2.5rem; 
+}
+
+.eye {
+  position: absolute;
+  right: 0.75rem;
+  height: 1.2rem;
+  width: auto;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #666;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: #E5E5E5;
+  font-size: 14px;
+  width: 120px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.message{
+  color: red;
+  margin-top: 4px;
+}
+
+.login-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.login-btn:hover:not(:disabled) {
+  background-color: #3a0061;
+}
+
+
+.register-link {
+  color: #777;
+  margin-top: 1rem;
+}
+
+.register-link button {
+  font-size: 14px;
+  color: #4d007d;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.register-link button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .register-container {
+    flex-direction: column; /* Stack left and right vertically */
+    height: auto; /* auto height for stacking */
+  }
+
+  .register-left, .register-right {
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  /* Left side upar, right side niche */
+  .register-left {
+    order: 1;
+  }
+
+  .register-right {
+    order: 2;
+  }
+
+  .register-dash {
+    max-width: 300px;
+  }
+
+  .register-left-text h5 {
+    font-size: 1.1rem;
+  }
+
+  .register-left-text p {
+    font-size: 0.9rem;
+  }
+
+  .register-scroll {
+    width: 50px;
+  }
+
+  .register-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .register-form {
+    max-width: 100%;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .register-left-text h5 {
+    font-size: 1rem;
+  }
+
+  .register-left-text p {
+    font-size: 0.85rem;
+  }
+
+  .register-dash {
+    max-width: 250px;
+  }
+
+  .register-scroll {
+    width: 40px;
+  }
+
+  .register-title {
+    font-size: 1rem;
+  }
+
+  .register-right {
+    padding: 1.5rem;
+  }
+}
